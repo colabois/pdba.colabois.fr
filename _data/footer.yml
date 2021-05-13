@@ -1,3 +1,2 @@
-- children:
-  - name: Site source
+- - name: Site source
     url: https://github.com/colabois/pdba.colabois.fr
