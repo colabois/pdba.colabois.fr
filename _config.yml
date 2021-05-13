@@ -4,8 +4,6 @@ exclude:
   - Dockerfile
   - Jenkinsfile
 
-default_language: en
-
 collections-dir: collections
 
 collection:
