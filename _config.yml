@@ -1,1 +1,8 @@
 default_language: en
+
+collections-dir: collections
+
+collection:
+  pages:
+    output: true
+    permalink: /:name

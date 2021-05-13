@@ -1,0 +1,32 @@
+---
+layout: base
+---
+
+<header class="header">
+    <div class="header-links">
+        <a href="/" class="header-links-link">PDBA</a>
+        <span class="header-links-separator"></span>
+        {% for link in site.data.header %}
+        <a href="{{ link.url }}" class="header-links-link">{{ link.name }}</a>
+        {% endfor %}
+    </div>
+    <div class="header-description">
+        <h1 class="header-description-title">PDBA</h1>
+        <p class="header-description-summary">Python Discord Bot Agregator</p>
+    </div>
+    <div class="header-down">
+        <a href="#main" class="header-down-link"><i class="material-icons">expand_more</i></a>
+    </div>
+</header>
+<main id="main">
+</main>
+<footer class="footer main-section">
+    {% for section in site.data.footer %}
+        <div class="footer-section">
+            {% for link in section.children %}
+                <a href="{{ link.url }}">{{ link.name }}</a>
+            {% endfor %}
+        </div>
+    {% endfor %}
+</footer>
+<link rel="stylesheet" href="/assets/css/index.css">
