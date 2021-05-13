@@ -1,0 +1,9 @@
+<footer class="footer">
+    {% for section in site.data.footer %}
+        <div class="footer-section">
+            {% for link in section.children %}
+                <a href="{{ link.url }}">{{ link.name }}</a>
+            {% endfor %}
+        </div>
+    {% endfor %}
+</footer>
