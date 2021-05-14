@@ -1,23 +1,5 @@
 .header {
-    display: flex;
-    flex-direction: column;
     height: 100vh;
-
-    background: linear-gradient(to right, blue, darkblue);
-    color: white;  
-
-    &-links {
-        display: flex;
-
-        &-link {
-            padding: 1em;
-            font-size: 1.25em;
-        }
-
-        &-separator {
-            flex-grow: 1;
-        }
-    }
 
     &-description {
         flex-grow: 1;
