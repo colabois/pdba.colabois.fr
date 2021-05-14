@@ -18,5 +18,4 @@ compress_html:
   ignore:
     envs: [local]
   blanklines: false
-  profile: true
   startings: [html, head, body]
