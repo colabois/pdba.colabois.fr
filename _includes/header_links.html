@@ -1,0 +1,7 @@
+<div class="header-links">
+    <a href="/" class="header-links-link">PDBA</a>
+    <span class="header-links-separator"></span>
+    {% for link in site.data.header %}
+        <a href="{{ link.url }}" class="header-links-link">{{ link.name }}</a>
+    {% endfor %}
+</div>
