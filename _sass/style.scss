@@ -21,7 +21,8 @@ body {
     
     display: flex;
     flex-direction: column;
-    align-items: center;
+
+    background: rgba(255, 255, 255, 0.897)
 }
 
 .header {
@@ -49,9 +50,17 @@ body {
     }
 }
 
+h1, h2, h3, h4, h5, h6 {
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
 article {
     margin: 2em 30%;
     padding: 2em;
+
+    background: white;
 }
 
 a {
@@ -60,10 +69,22 @@ a {
 }
 
 .button {
+    display: inline-block;
     background-color: lightgrey;
     border-radius: 3px;
     padding: .5em;
     margin: .3em;
+}
+
+.version {
+    border-bottom: solid 1px grey;
+
+    &:last-child {
+        border-bottom: none;
+    }
+
+    padding: 1em 0;
+    margin: 0;
 }
 
 .footer {
