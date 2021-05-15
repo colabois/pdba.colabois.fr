@@ -5,12 +5,13 @@ permalink: /docs
 lang: en
 ---
 
-<ul>
 {% for version in site.data.versions %}
-    <li>
-        <p>{{ version.name }}</p>
-        <p><a href="{{ version.docs_url }}">Documentation</a></p>
-        <p><a href="{{ version.download_url }}">Download</a></p>
-    </li>
+    <div class="version">
+        <h1 class="version-title">{{ version.name }}</h1>
+        <p class="version-changelog">{{ version.changelog }}</p>
+        <div class="version-links">
+            <a href="{{ version.download_url }}" class="version-link button">Download</a>
+            <a href="{{ version.docs_url }}" class="version-link button">Docs</a>
+        </div>
+    </div>
 {% endfor %}
-</ul>
