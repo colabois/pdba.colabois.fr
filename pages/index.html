@@ -1,6 +1,21 @@
 ---
-layout: index
+layout: base
 title: "Home"
 permalink: /
 lang: en
 ---
+
+<header class="header">
+    {% include header_links.html %}
+    <div class="header-description">
+        <h1 class="header-description-title">PDBA</h1>
+        <p class="header-description-summary">Python Discord Bot Agregator</p>
+    </div>
+    <div class="header-down">
+        <a href="#main" class="header-down-link"><i class="material-icons">expand_more</i></a>
+    </div>
+</header>
+<main id="main" class="main">
+</main>
+{% include footer.html %}
+<link rel="stylesheet" href="/assets/css/index.css">
