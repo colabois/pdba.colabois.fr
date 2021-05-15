@@ -78,9 +78,10 @@ a {
 
 .button {
     display: inline-block;
-    background-color: lightgrey;
+    background-color: rgb(103, 137, 230);
+    color: white;
     border-radius: 3px;
-    padding: .5em;
+    padding: .5em .75em;
     margin: .3em;
 }
 
