@@ -8,12 +8,5 @@ lang: en
 <h1>Downloads</h1>
 
 {% for version in site.data.versions %}
-    <div class="version">
-        <h2 class="version-title">{{ version.name }}</h2>
-        <p class="version-changelog">{{ version.changelog }}</p>
-        <div class="version-links">
-            <a href="{{ version.download_url }}" class="version-link button">Download</a>
-            <a href="{{ version.docs_url }}" class="version-link button">Docs</a>
-        </div>
-    </div>
+    {% include version.html name=version.name changelog=version.changelog download_url=version.download_url docs_url=version.docs_url %}
 {% endfor %}
