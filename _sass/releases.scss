@@ -1,0 +1,15 @@
+.projects-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project {
+    margin: 0 1em;
+    max-width: clamp(500px, 30%, 100%);
+    width: 100%;
+
+    &-title {
+        text-align: center;
+    }
+}
