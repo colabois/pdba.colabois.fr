@@ -3,6 +3,7 @@ exclude:
   - Makefile
   - Dockerfile
   - Jenkinsfile
+  - .jekyll-cache
 
 collections:
   pages:
