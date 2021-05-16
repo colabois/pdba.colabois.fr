@@ -3,6 +3,5 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
-Gemfile.lock
 
 _data/releases.yml
