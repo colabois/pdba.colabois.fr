@@ -1,6 +1,7 @@
 plugins:
   - jekyll-commonmark
   - jekyll-include-cache
+  - jekyll-sitemap
 
 exclude:
   - README.md
