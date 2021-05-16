@@ -1,8 +1,8 @@
-build: update
+build: install
 	bundle exec jekyll build
 
-run: update
+run: install
 	bundle exec jekyll serve
 
-update:
-	bundle update
+install:
+	bundle install
