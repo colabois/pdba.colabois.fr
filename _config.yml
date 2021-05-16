@@ -2,6 +2,7 @@ plugins:
   - jekyll-commonmark
   - jekyll-include-cache
   - jekyll-sitemap
+  - jekyll-gzip
 
 exclude:
   - README.md
