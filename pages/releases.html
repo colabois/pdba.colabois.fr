@@ -1,0 +1,21 @@
+---
+layout: default
+title: Download
+permalink: /releases
+lang: en
+---
+
+<link rel="stylesheet" href="/assets/css/download.css">
+
+<h1>Downloads</h1>
+
+<div class="projects-list">
+    {% for project in site.data.releases %}
+        <div class="project">
+            <h2 class="project-title">{{ project.name }}</h2>
+            {% for version in project.versions %}
+                    {% include version.html name=version.name changelog=version.changelog download_url=version.download_url docs_url=version.docs_url %}
+            {% endfor %}
+        </div>
+    {% endfor %}
+</div>
