@@ -4,12 +4,10 @@ exclude:
   - Dockerfile
   - Jenkinsfile
 
-collections-dir: collections
-
-collection:
+collections:
   pages:
     output: true
-    permalink: /:name
+    permalink: /:title
 
 compress_html:
   clippings: all
