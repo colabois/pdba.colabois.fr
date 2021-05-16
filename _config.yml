@@ -1,3 +1,6 @@
+plugins:
+  - jekyll-commonmark
+
 exclude:
   - README.md
   - Makefile
@@ -9,6 +12,10 @@ collections:
   pages:
     output: true
     permalink: /:title
+
+markdown: CommonMark
+commonmark:
+  extensions: ["strikethrough", "autolink", "table"]
 
 compress_html:
   clippings: all
