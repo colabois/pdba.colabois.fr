@@ -1,5 +1,5 @@
 - name: Source
-  url: https://moriya.zapto.org/gitsokyo/PDBA
+  url: https://gitsokyo.colabois.fr/PDBA
 
 - name: Releases
   url: /releases
